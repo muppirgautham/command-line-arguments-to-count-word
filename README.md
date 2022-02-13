@@ -6,20 +6,47 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
+Import sys module to use command line arguments.
 
 ### Step 2: 
+Use the open() key with argument sys.argv[1] which means the first index of given argument
  
 ### Step 3: 
+Iterate the content of the file using for loop.
 
 ### Step 4:  
+Split the contents into each line using .split() function
 
 ### Step 5: 
+Iterate the list of lines and increment the value of variable (word) each time
 
 ### Step 6: 
+Give the argument "python prgm.py EX12.txt" on the command line.
+
+### step 7:
+End of the Program.
 
 ## PROGRAM:
+```
+#Program for getting the word count from the contents of a file using command line arguments.
+#Developed by: Nithishkumar P
+#Register number: 212221230070
+import sys
+fp=open(sys.argv[1])
+count=0
+for data in fp:
+    l=data.split()
+    for i in l:
+        count+=1 
+print("No. of words in the file:",count)
+```
+### FILE:
+![image](https://user-images.githubusercontent.com/94810884/153757801-ab01b0b3-1ff1-4198-bcfb-5c033d3bc43a.png)
+
 
 ### OUTPUT:
+![image](https://user-images.githubusercontent.com/94810884/153757811-1207204f-fff4-4bca-a8ff-5a7427ba7dc7.png)
+
 
 
 
